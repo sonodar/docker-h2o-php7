@@ -1,0 +1,9 @@
+web:
+  image: sonodar/h2o-php7
+  ports:
+    - "443:443"
+  volumes:
+    - ./html:/opt/h2o/html
+    - ./data/log:/var/log/h2o
+    - ./h2o.conf:/opt/h2o/h2o.conf
+#    - ./php.ini:/op/php7/lib/php/php.ini
